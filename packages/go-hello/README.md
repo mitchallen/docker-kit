@@ -15,8 +15,8 @@ All commands are from the root of the monorepo:
 
 #### Remove after running
 
-* Remove container immediately after running 
-* Allows running run again without removing first:
+* Remove container immediately after running binary
+* Allows running the **run** command again without removing first:
 
 ```sh
 docker run --rm img-go-hello
