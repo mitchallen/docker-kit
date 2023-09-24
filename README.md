@@ -21,4 +21,5 @@ A monorepo of docker projects
 * [How to use .dockerignore and its importance](https://shisho.dev/blog/posts/how-to-use-dockerignore/)
 * [The smallest Docker image to serve static websites](https://lipanski.com/posts/smallest-docker-image-static-website)
 * [Running Go Binary with Docker](https://www.abilityrush.com/running-go-binary-with-docker/)
+* [How to automatically delete a Docker container after running it](https://www.powercms.in/article/how-automatically-delete-docker-container-after-running-it)
 

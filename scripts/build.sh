@@ -21,7 +21,7 @@ build-docker() {
     fi
 
     docker build -t $TAG_NAME $FOLDER_NAME
-    docker images | grep hello
+    docker images | grep $TAG_NAME
 }
 
 PACKAGE_NAME=$1

@@ -8,34 +8,41 @@ All commands are from the root of the monorepo:
 ### Build
 
 ```sh
-./scripts/build.sh go-hello go-hello
+./scripts/build.sh go-hello img-go-hello
 ```
 
 ### Run
 
+* Remove immediately after running 
+* Allows running run again without removing first:
+
 ```sh
-docker run --name test-go-hello go-hello
+docker run --rm img-go-hello
 ```
 
-### Cleanup
+* Persistent
+* Can not run this command twice withot removing first
+* Needs to be removed via name later
+
+```sh
+docker run --name test-go-hello img-go-hello
+```
+
+### Cleanup Binary
 
 In another window:
 
-Stop server:
+* Remove container:
 
-```sh
-docker stop test-go-hello
-```
-
-Remove container:
+Only needed if run as a persistent container:
 
 ```sh
 docker rm test-go-hello
 ```
 
-Remove image:
+* Remove image:
 
 ```sh
-docker rmi go-hello
+docker rmi img-go-hello
 ```
 
