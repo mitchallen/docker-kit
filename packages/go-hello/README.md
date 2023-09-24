@@ -13,16 +13,19 @@ All commands are from the root of the monorepo:
 
 ### Run
 
-* Remove immediately after running 
+#### Remove after running
+
+* Remove container immediately after running 
 * Allows running run again without removing first:
 
 ```sh
 docker run --rm img-go-hello
 ```
 
-* Persistent
-* Can not run this command twice withot removing first
-* Needs to be removed via name later
+#### Peristent container
+
+* Can not run this command twice without removing first
+* Needs to be removed later (can use name tag - see cleanup)
 
 ```sh
 docker run --name test-go-hello img-go-hello
@@ -40,7 +43,7 @@ Only needed if run as a persistent container:
 docker rm test-go-hello
 ```
 
-* Remove image:
+* Remove image
 
 ```sh
 docker rmi img-go-hello
